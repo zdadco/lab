@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    background: #fff5ea;
+
+}
+a {
+    text-decoration: none;
+}
+
+
+
+header {
+    background: linear-gradient(to bottom, #ffaf5d, #ffe7ce);
+}
+#logo {
+    margin: 2vh 2vw;
+    height: 10vh;
+}
+
+
+nav {
+    background: #ffe7ce;
+}
+.nav-toggle {
+    position: absolute;
+    left: 18vh;
+    top: 14.5vh;
+    padding: 0.5em;
+    background: inherit;
+    color: #dadada;
+    cursor: pointer;
+    font-size: 1.2em;
+    line-height: 1;
+    z-index: 2001;
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+}
+.nav-toggle:after {
+    content: '\2630';
+    text-decoration: none;
+}
+.nav-toggle:hover {
+    color: #f4f4f4;
+}
+[id='nav-toggle'] {
+    position: absolute;
+    display: none;
+}
+[id='nav-toggle']:checked ~ nav > .mobile-nav-items > .nav-toggle {
+    left: auto;
+    right: 2px;
+    top: 1em;
+}
+[id='nav-toggle']:checked ~ nav >.mobile-nav-items {
+    left: 0;
+    box-shadow:4px 0 20px 0 rgba(0,0,0, 0.5);
+    -moz-box-shadow:4px 0 20px 0 rgba(0,0,0, 0.5);
+    -webkit-box-shadow:4px 0 20px 0 rgba(0,0,0, 0.5);
+    overflow-y: auto;
+}
+[id='nav-toggle']:checked ~ nav >.mobile-nav-items > .nav-toggle:after {
+    content: '\2715';
+}
+.mobile-nav-items {
+    display: none;
+    min-width: 18vh;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    left: -18vh;
+    padding: 15px 20px;
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    transition: left 0.3s;
+    background: #ea0000;
+    z-index: 2000;
+    box-sizing: border-box;
+}
+.mobile-nav-items > ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-nav-items > ul > li {
+    line-height: 2.5;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+    -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
+    -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
+    transition: opacity .5s .1s, transform .5s .1s;
+}
+
+[id='nav-toggle']:checked ~ nav > .mobile-nav-items > ul > li {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+.mobile-nav-items > ul > li > a {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #dadada;
+    width: 100%;
+    text-decoration: none;
+    -webkit-transition: color .5s ease, padding .5s ease;
+    -moz-transition: color .5s ease, padding .5s ease;
+    transition: color .5s ease, padding .5s ease;
+}
+.nav-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.nav-item > a {
+    font-size: 1.2rem;
+    color: inherit;
+}
+
+
+.container {
+    width: 100%;
+}
+.container > h1 {
+    text-align: center;
+}
+#about-article > img {
+    float: right;
+    margin: 1vh 2vw;
+}
+article > p {
+    font-size: 1.5rem;
+}
+.link {
+    color: #ea0000;
+}
+.link:hover {
+    color: #ffc300;
+}
+#info-article table {
+    border-spacing: 1vw;
+    margin: 0 auto;
+}
+#info-article tbody th {
+    text-align: left;
+}
+#info-article tbody h2 {
+    text-align: center;
+}
+#table-spacer {
+    padding: 0 4vw;
+}
+#subscribe {
+    padding: 1vh 2vw;
+}
+.btn {
+    background: #ffe7ce;
+    color: #ea0000!important;
+    padding: 1vh 2vw;
+    border: none;
+    margin-left: 1vw;
+}
+.btn:hover {
+    background: #ea0000!important;
+    color: #ffc300!important;
+}
+.modal-content {
+    width: 20%!important;
+}
+.modal-header {
+    background-color: #ffaf5d;
+    color: #ea0000;
+}
+.modal-header > h2 {
+    text-align: center;
+}
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+.modal-footer > .btn {
+    background-color: #ffaf5d;
+    color: #ea0000;
+    font-size: 1.05rem;
+    padding: 0.5vh 1vw;
+    margin: 0;
+}
+.form-row {
+    padding: 1vh 0;
+}
+.form-element {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа №1</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <input id="nav-toggle" type="checkbox" hidden>
+    <header>
+        <a href="/#">
+            <img id="logo" src="img/favicon/logo.png" alt="Логотип компании">
+        </a>
+    </header>
+    <nav>
+        <div class="nav-items">
+            <div class="nav-item btn">
+                <a href="../../task_1/static/index.html">Лабораторная №1</a>
+            </div>
+            <div class="nav-item btn">
+                <a href="/menu.html">Меню</a>
+            </div>
+            <div class="nav-item btn">
+                <a href="/blog.html">Блог</a>
+            </div>
+        </div>
+        <div class="mobile-nav-items">
+            <label class="nav-toggle" for="nav-toggle"></label>
+            <ul>
+                <li>
+                    <a href="../../task_1/static/index.html">Лабораторная №1</a>
+                </li>
+                <li>
+                    <a href="/menu.html">Меню</a>
+                </li>
+                <li>
+                    <a href="/blog.html">Блог</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>О McDonald's</h1>
+        <section id="about">
+            <article id="about-article">
+                <img src="img/mac.jpeg" alt="Одно из заведений макдональдса">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis imperdiet massa sit amet
+                    mollis. Nulla
+                    sit amet dolor ut elit condimentum facilisis in sodales nulla. Donec quis auctor augue, quis mattis
+                    mauris.
+                    Nam ac ante eget sem venenatis tincidunt non id quam. Fusce rutrum pharetra finibus. Pellentesque
+                    finibus
+                    metus sagittis tempus mattis. In eu tellus non magna bibendum auctor. Donec dictum diam non molestie
+                    auctor.
+                    Morbi ullamcorper sagittis quam vestibulum suscipit. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
+                    elit. Suspendisse vitae mi libero. Donec quis tincidunt elit, ac vestibulum neque. Nullam vestibulum
+                    nec
+                    lectus id lobortis. Proin sit amet rhoncus mauris. Mauris ut nisl eu erat lobortis fringilla nec nec
+                    mi.
+                    Vestibulum eu efficitur eros.
+                </p>
+            </article>
+            <article id="description-article">
+                <p>
+                    Данный текст сгенерирован с помощью стайта <a class="link"
+                                                                  href="https://ru.lipsum.com/" target="_blank">lipsum.com</a>, который
+                    позволяет генерировать выбранное количество параграфов текста. А данные о компании взяты с <a
+                        class="link" href="https://ru.wikipedia.org/wiki/McDonald%E2%80%99s" target="_blank">Википедии</a>.
+                </p>
+            </article>
+            <article id="info-article">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h2>Немного статистики</h2>
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>Основание</th>
+                                        <th>Продукция</th>
+                                        <th>Количество сотрудников</th>
+                                        <th>Капитализация</th>
+                                        <th>Оборот</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1940</td>
+                                        <td>Быстрое питание</td>
+                                        <td>210 тыс.</td>
+                                        <td>$161 млрд</td>
+                                        <td>$21,025 млрд</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td id="table-spacer"></td>
+                            <td rowspan="2">
+                                <h2>Президенты и CEO</h2>
+                                <ol>
+                                    <li>1955—1973 Реймонд Альберт Крок</li>
+                                    <li>1973—1987 Фред Тёрнер</li>
+                                    <li>1987—1998 Майкл Куинлан</li>
+                                    <li>1998—2002 Джек Гринберг</li>
+                                    <li>2003—2004 Джеймс Ричард Канталупо</li>
+                                    <li>2004—2004 Чарльз Белл</li>
+                                    <li>2004—2012 Джеймс Скиннер</li>
+                                    <li>2012—2015 Дон Томпсон</li>
+                                    <li>2016 Энрике Эрнандес мл.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">
+                                <h2>Сайты компании</h2>
+                                <ul>
+                                    <li>
+                                        <a class="link" href="https://www.mcdonalds.com/us/en-us.html" target="_blank">mcdonalds.com</a>
+                                    </li>
+                                    <li>
+                                        <a class="link" href="https://www.mcdonalds.com.hk/ch.html" target="_blank">mcdonalds.com.hk</a>
+                                    </li>
+                                    <li>
+                                        <a class="link" href="https://www.mcdonalds.com.tw/tw/ch/index.html" target="_blank">mcdonalds.com.tw</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <section id="subscription">
+            <div>
+                <h2>Оформить подписку на новости</h2>
+                <button id="subscribe" class="btn" type="button">Подписаться</button>
+                <div id="subscription-modal" class="modal">
+                    <form class="modal-content" action="subscribe.php" method="post">
+                        <div class="modal-header">
+                            <h2>Оформить подписку</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-row">
+                                <div>Email</div>
+                                <input id="email" class="form-element" type="email" name="email"/>
+                            </div>
+                            <div class="form-row">
+                                <div>Комментарий</div>
+                                <textarea id="comment" class="form-element" name="comment"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn confirm" type="submit">Подтвердить</button>
+                            <button class="btn cancel" type="button">Отменить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>Copyright 2020</footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

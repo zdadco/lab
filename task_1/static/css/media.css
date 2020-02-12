@@ -1,0 +1,14 @@
+@media screen and (max-width: 1024px) {
+    #about-article > img {
+        float: none;
+        margin: 0 10vw;
+        width: 80%;
+        height: 80%;
+    }
+    .nav-items {
+        display: none;
+    }
+    .mobile-nav-items {
+        display: block;
+    }
+}
